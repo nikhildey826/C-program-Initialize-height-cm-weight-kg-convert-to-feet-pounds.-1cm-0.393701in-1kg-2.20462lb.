@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    const float cmToInch = 0.393701;
+    const float kgToPound = 2.20462;
+
+    float heightInCm = 180.0;
+    float weightInKg = 75.0;
+
+    float heightInInch = heightInCm * cmToInch;
+    float weightInPound = weightInKg * kgToPound;
+
+    printf("Height: %.2f feet\n", heightInInch / 12);
+    printf("Weight: %.2f pounds\n", weightInPound);
+
+    return 0;
+}
